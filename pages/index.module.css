@@ -1,4 +1,6 @@
 .main {
+  font-family: 'Comic Mono', sans-serif;
+
   background: #121212;
   color: #ffffff;
   height: 100%;
@@ -30,10 +32,17 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 600px) {
+  .main .icon {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+  }
+}
+
 .main h3 {
   display: flex;
   align-items: center;
-  font-family: 'Comic Mono', cursive;
+  font-family: 'Gothic', sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: #42d0ff;

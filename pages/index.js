@@ -116,7 +116,7 @@ export default function Home() {
         }
       `}</style>
       <Head>
-        <title>AI재현의 챗봇</title>
+        <title>AI재현의 코딩챗봇</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -125,6 +125,7 @@ export default function Home() {
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+
         <link
           href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.min.css"
           rel="stylesheet"
@@ -134,7 +135,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.icon}></div>
 
-        <h3>AI재현의 코딩 상담소</h3>
+        <h3>AI재현의 코딩 챗봇</h3>
         <div className={styles.chat}>
           <div className={styles.chatDisplay}>
             {messageElements}
