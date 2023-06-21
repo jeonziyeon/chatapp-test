@@ -132,6 +132,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div className={styles.icon}></div>
+
         <h3>AI재현의 코딩 상담소</h3>
         <div className={styles.chat}>
           <div className={styles.chatDisplay}>
