@@ -24,19 +24,13 @@
   background-image: url('/images/dev-devil.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  margin-top: 40px;
+  background-size: contain;
+  margin-top: 10px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-bottom: 10px;
-}
 
-@media screen and (max-width: 600px) {
-  .main .icon {
-    width: 100px; /* Adjust as needed */
-    height: 100px; /* Adjust as needed */
-  }
+  box-sizing: border-box;
 }
 
 .main h3 {
