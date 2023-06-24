@@ -19,11 +19,11 @@ export default function Home() {
 
   function getGreeting() {
     const greetings = [
-      '안녕하세요! 코딩하는데 어떤 궁금증이 있으신가요? 제가 도움을 드릴 수 있어서 기쁩니다. 어떤 부분에 대해 물어보고 싶으신가요?',
-      '안녕하세요! 오늘은 코딩에 대한 궁금증이 있으신가요? 제가 알고 있는 선에서 도움을 드리도록 하겠습니다. 무엇을 알고 싶으신가요?',
-      '안녕하세요! 코딩에 관심이 있으신가요? 제가 알고 있는 한에서 도움을 드릴 수 있습니다. 무엇을 알고 싶으신가요?',
-      '안녕하세요! 코딩에 대해 어떤 것을 알고 싶으신가요? 제가 알고 있는 한에서 도움을 드리도록 하겠습니다.',
-      '안녕하세요! 코딩에 관련된 질문이 있으신가요? 제가 알고 있는 선에서 도움을 드릴 수 있습니다. 어떤 부분에 대해 궁금하신가요?',
+      '안녕하세요! 식물을 키우는데 어떤 궁금증이 있으신가요? 제가 도움을 드릴 수 있어서 기쁩니다. 어떤 부분에 대해 물어보고 싶으신가요?',
+      '안녕하세요! 오늘은 식물에 대한 궁금증이 있으신가요? 제가 알고 있는 선에서 도움을 드리도록 하겠습니다. 무엇을 알고 싶으신가요?',
+      '안녕하세요! 식물에 관심이 있으신가요? 제가 알고 있는 한에서 도움을 드릴 수 있습니다. 무엇을 알고 싶으신가요?',
+      '안녕하세요! 식물 대해 어떤 것을 알고 싶으신가요? 제가 알고 있는 한에서 도움을 드리도록 하겠습니다.',
+      '안녕하세요! 식물에 관련된 질문이 있으신가요? 제가 알고 있는 선에서 도움을 드릴 수 있습니다. 어떤 부분에 대해 궁금하신가요?',
     ]
     const index = Math.floor(greetings.length * Math.random())
     return greetings[index]
@@ -116,7 +116,7 @@ export default function Home() {
         }
       `}</style>
       <Head>
-        <title>AI재현의 코딩챗봇</title>
+        <title>이름이뭐야 식물봇</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -135,7 +135,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.icon}></div>
 
-        <h3>AI재현의 코딩 챗봇</h3>
+        <h3>이름이뭐야 식물봇</h3>
         <div className={styles.chat}>
           <div className={styles.chatDisplay}>
             {messageElements}
@@ -146,17 +146,17 @@ export default function Home() {
             <input
               type="text"
               name="chat"
-              placeholder="여기에 질문하세요~"
+              placeholder="식물에 관련된 질문을 해주세요~"
               value={chatInput}
               onChange={(e) => {
                 setChatInput(e.target.value)
               }}
             />
-            <input type="submit" value="질문하기" />
+            <input type="submit" value="물어보기" />
           </form>
         </div>
         <div className={styles.footer}>
-          made by <a href="https://developer-here.com">AI재현</a>
+          made by <a href="https://www.instagram.com/snug_corner_">아늑한구석 snug_corner_</a>
         </div>
       </main>
     </div>
